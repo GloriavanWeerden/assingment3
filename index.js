@@ -4,7 +4,6 @@ const Page = require("./_layout/Default");
 module.exports = class extends Page {
     constructor(){
         super({title:"Home", sName:"Gloria van Weerden"});
-        this.nSubtotal = 0.00;
     }
     render(sPage) {
         const oJson = fetch("https://ux-308-e4737-default-rtdb.firebaseio.com/meals.json").json();
@@ -29,6 +28,7 @@ module.exports = class extends Page {
                 <form action="https://serene-taiga-04277.herokuapp.com/payment" method="post">
                 <input type="hidden" name="title" value="${oEntity.title}" />
                 <input type="hidden" name="price" value="25" />
+                <input type="date" placeholder="date for pickup" name="date"/>
                 <input type="tel" placeholder="enter your number" name="telephone"/>
                 <button type="submit">Order this meal.</button>
                 </form></div>

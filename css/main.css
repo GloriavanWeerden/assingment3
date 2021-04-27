@@ -2,7 +2,7 @@
 
 /* color scheme */
 :root {
-    --header-bg-color: #ff80a2;
+    --header-bg-color: #fda3b7;
     --header-txt-color: rgb(255, 255, 255);
     --header-highlight-color: rgb(255, 255, 255);
 }
@@ -29,7 +29,7 @@ row{
 
 h1{
     text-align: center;
-    color: #ff80a2;
+    color: #fda3b7;
     font-size: 60px;
     font-family: "Georgia", "Didot", "Times New Roman", Times, serif;
 }
@@ -49,7 +49,7 @@ p{
 }
 
 button {
-    background-color: #ff80a2;
+    background-color: #fda3b7;
     border:bisque;
     text-align: center;
     padding: 6px 25px;
